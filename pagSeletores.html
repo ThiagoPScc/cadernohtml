@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+
+    <style>
+        li>a{
+            color: red;
+        }
+        .pag{
+            color:red
+
+        }
+        .explica{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">pagina iniciak</a>
+    <h1>Seletores</h1>
+    <p>seletor é como chamamos os elementos no css ex:
+        .p color:red /no caso 'p' é o seletor
+    </p>
+    <p>* é o seletor universal, ou seja, todos os seletores em um só</p>
+    <hr>
+    <p>seletor de texto: h1,h2,h3...</p>
+    <hr>
+    <p>seletor de classe: quando criamos uma classe com css.</p>
+    <p>podemos usar tambem assim p.verde [color:red]</p>
+    <p>aqui seleciona todos os paragrafos que tem a classe verde,limitando os objetos que podem pegar esta classe para apenas paragrafos</p>
+    <hr>
+    <p>seletor por id: #algo[] o que ja usamos anteriormente</p>
+    <hr>
+    <p>seletor de filho: li>a[]</p>
+    <p>aqui o que acontece é, todos os links que estivirem dentro de um li, teram essa formatação</p>
+    <p>funciona para qualquer classe dentro de outra, seja por sintaxe ou divs, porem só funciona para elementos diretamente ligados, sendo assim
+        não é possivel colocar um li-span-a, precisa ser direto:li-a
+    </p>
+    <li>
+        <a href="">TesteCom</a>
+    </li>
+        <a href="">TesteSem</a>
+    <hr>
+    <p>seletor de descendente: p a [], igual o anterior porem agora não precisa ser diretamente ligado</p>
+    <hr>
+    <p>seletor adjacente ou irmão: h1+p, ele ira adcionar a classe ao proximo p grudado a um h1, somente o posterior </p>
+    <hr>
+    <p>seletor irmão geral: igual ao anterior, porem não é necessario ser adjacente</p>
+    <hr>
+   
+   <div class="pag">
+        <h1>Herança e especificidade</h1>
+        <h2> lorem ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta fugiat culpa amet? Expedita eos cum nisi tempore eius fuga minus itaque praesentium alias blanditiis facilis, atque omnis amet, ut iure!</p>
+        <div class="explica">
+            <p>aqui o elemento que conta com a cor vermelha é a classe que abrange todos os elementos, elementos esse que herdam essas caracteristicas</p>
+            <p>essa explicação não é afetada pois outra classe está fazendo ela herdar a cor preta</p>
+            <p>vele lembrar que border e background não são herdados, seu tamanho só aumenta conforme os elementos em seu interior</p>
+        </div>    
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit maxime adipisci veniam delectus hic quisquam, rem ullam consequuntur totam? Perspiciatis odit aliquid fuga architecto repellat inventore ipsum impedit accusantium!</p>
+    </div>
+    <p> no caso de especifidaade é como é a regra de ordem do css, ou seja o que é ativado antes do que</p>
+    <p> quando temos dois elementos iguais, o ultimo é usado, é possivel usar o !important para mudar isso, porem não é recomendado usar</p>
+    <p> se for mais especifico sera escolhido como o determinante, ou seja se eu usar o * para tirar as margens e depois colocar margens em um h1, o h1 como é mais específico ele ira ter margens</p>
+    <p> orderm: do menos especifico para o mais<br>
+    */h1/h1 com classe/h1 com id</p>
+
+</body>
+</html>

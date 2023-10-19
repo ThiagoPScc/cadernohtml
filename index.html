@@ -1,0 +1,127 @@
+<!doctype html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Teste</title>
+</head>
+<body>
+	<h1>Site de aprendizado</h1>
+	<p>	Este site é apenas para teste e práticas na minha formação de desenvolvimento web<br>
+	 Seja bem vindo, e espero que isto lhe sirva de algum aprendisado ou entreterimento</p>
+	 <hr>
+	 <h3> formatação de texto</h3>
+	 <p>este texto esta com <strong>strong</strong></p>
+	 <p>este texto esta com <em>em</em></p>
+	 <p>este texto esta com <strike>strike</strike></p>
+	 <p>este texto esta com <u>underline: u</u></p>
+	 <hr>
+	 <h3>Listas</h3>
+	 <p>listas com ul e li, ou seja listas sem ordem</p>
+	 <!-- Lembrando que é possivel colocar o tipo para circle, square e disk-->
+	 <ul type="square">
+	 	<li>numero1</li>
+	 	<li>numero2</li>
+	 	<li>numero3</li>
+	 	<li>numero4</li>
+	 </ul>
+	 <p>listas com ol e li ou seja listas ordanadas</p>
+	 <!-- aqui tambem existe os tipos na lista ordenada, sendo os tipos: 1,A,a,I,i-->
+	 <ol type="A">
+		<li>numero1</li>
+		<li>numero2</li>
+		<li>numero3</li>
+		<li>numero4</li>
+	 </ol>
+	 <hr>
+	 <h3>Imagens</h3>
+	 <p>aqui sera colocado imagens</p>
+	 <img src="imgs/img1.jpg"width="325">
+	 <img src="imgs/im2.jpg" width="325">
+	 <img src="imgs/im3.jpg" width="625" height="625" border="3">
+	 <h4>está imagem esta setada com os valores de tamanho em porcentagem, assim quando o tamanho da janela do usuario diminuir ou aumentar<br>
+	a imagem ira sempre se redimencionar para ficar do tamanho da página, mas pelo que parece não é possivel tirar a margem padrão e o padding somente no html, de forma simples é claro.</h4>
+	 <img src="imgs/im4.jpg" width="100%" margin="0" padding="0">
+	 <hr>
+	 <h3>Links</h3>
+	 <a href="pag1comcss.html">pag1</a><br>
+	 <a href="pag1comcss.html" ><img src="imgs/im3.jpg" width="100" height="100"></a>
+	 <a href="pagintermediario.html">CSS-Intermediario</a>
+	 <a href="pagSeletores.html">CSS-Seletores</a>
+	 <a href="abalateral.html">abalateral</a>
+	 <hr>
+	 <h3>Tabelas</h3>
+	 <p>esta é uma função meio escondida do html, já que demorei 4 anos pra descobrir, mas é possivel fazer tabelas no html</p>
+	 <!-- o table abre a tabela, tr abre a linha, o th abre o titulo da coluna e o td abre o conteudo padrão-->
+	 <!--o border aqui abre as linhas que fazem a divisão das células n atabela-->
+	 <table border="1">
+		<tr>
+			<th>código</th>
+			<th>preço</th>
+			<th>tamanho</th>
+		</tr>
+		<tr>
+			<td>01</td>
+			<td>100,00</td>
+			<td>M</td>
+		</tr>
+		<tr>
+			<td>02</td>
+			<td>80,00</td>
+			<td>p</td>
+		</tr>
+		<tr>
+			<td>03</td>
+			<td>120,00</td>
+			<td>G</td>
+		</tr>
+		<tr>
+			<th rowspan="2">total</th>
+			<td colspan="2">desconto -20,00</td>
+		</tr>
+		<tr>
+			<td colspan="2">180,00</td>
+		</tr>
+	
+	 </table>
+	 <h4>teste com imagem</h4>
+	 <table border="1" width="300">
+		<th>prod1</th>
+		<td>nome1</td>
+		<td><img src="imgs/im3.jpg" width="30"></td>
+	 </table>
+	 <p> podemos ver que sim, a imagem é possivel de ser colocada na tabela, assim sendo possivel tambem colocar links e valores como titulos e links<br>
+	assim como definir o tamanho dela igual das imagens</p>
+	<hr>
+	<form>
+	Login:<br>
+	<input type="text" name="loginText"><br>
+
+	Senha:<br>
+	<input type="password" name="senha"><br>
+
+	<input type="button" value="Logar"><br>
+	<input type="radio" name="sexo" value="M">Masculino<br>
+	<input type="radio" name="sexo" value="F">Feminino<br>
+
+	<p>interesses</p>
+	<input type="checkbox" name="interesses">esporte<br>
+	<input type="checkbox" name="interesses">arte<br>
+	<input type="checkbox" name="interesses">lógica<br>
+
+	<h4>estado</h4>
+	<select name="estado">
+		<option value="sp">SP</option>
+		<option value="rj">RJ</option>
+		<option value="ba">BA</option>
+		<option value="am">AM</option>
+		<option value="sc">SC</option>
+	</select>
+	observações:<br>
+	<textarea></textarea><br>
+	<input type="submit" value="cadastrar">
+
+	</form>
+</body>
+
+</html>

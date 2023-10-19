@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Intermediaro</title>
+    <style>
+        #principal{
+            width: 900px;
+            border: solid red 2px;
+        }
+        #noticias{
+            background-color: rgb(156, 156, 156);
+        }
+        #imgss{
+            background-color: rgb(109, 109, 109);
+        }
+        .noticia{
+            width: 270px;
+            background-color: rgb(211, 211, 211);
+            padding: 5px;
+            margin: 10px;
+            float: left;
+        }
+        .clear{
+            clear: both;
+        }
+        .imagens{
+            float: left;
+            margin: 10px;
+            padding: 5px;
+
+        }
+        img{
+            width: 270px;
+            height: 270px;
+       
+        }
+        .borda{
+            border:solid red 1px;
+        }
+        .bordaIn{
+            border:solid red 1px;
+            display: inline;
+        }
+        .inx{
+            width: 20%;
+            background-color: brown;
+            display:inline;
+        }
+        .inxbloc{
+            width: 20%;
+            background-color: brown;
+            display:inline-block;
+        }
+        .rel{
+            position: relative;
+            top :10px;
+            left: 10px;
+            border:solid red 1px;
+            padding: 3px;
+        }
+        .abs{
+            position: absolute;
+            color: red;
+            border:solid blue 1px;
+        }
+        .fix{
+            position: fixed;
+            border: dotted wheat 2px;
+            color:red;
+            top:10px;
+            right:0px;
+        }
+        .cont1{
+            border: solid red 2px;
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 1720px;
+            left: 50px;
+            z-index: 2;
+        }
+        .cont2{
+            border: solid red 2px;
+            background-color: orange;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            z-index: 1;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="principal">
+        <div id="noticias">
+            <div class="noticia">
+                <h2>Lorem som latit lum ora 1</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nesciunt id cupiditate quos vel sequi molestiae modi mollitia soluta tenetur. Nemo, numquam vero. Rem voluptatum, ducimus aliquam sapiente assumenda tempora!</p>
+                <a href="index.html">Veja Mais</a>
+            </div>
+            <div class="noticia">
+                <h2>Lorem som latit lum ora 2</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nesciunt id cupiditate quos vel sequi molestiae modi mollitia soluta tenetur. Nemo, numquam vero. Rem voluptatum, ducimus aliquam sapiente assumenda tempora!</p>
+                <a href="">Veja Mais</a>
+            </div>
+            <div class="noticia">
+                <h2>Lorem som latit lum ora 3</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nesciunt id cupiditate quos vel sequi molestiae modi mollitia soluta tenetur. Nemo, numquam vero. Rem voluptatum, ducimus aliquam sapiente assumenda tempora!</p>
+                <a href="">Veja Mais</a>
+            </div>
+        </div>
+        <div class="clear"></div>
+       
+        <div id="imgss">
+            <div class="imagens">
+                <img src="imgs/imi1.jpg">
+            </div>
+            <div class="imagens">
+                <img src="imgs/imi2.jpg">
+            </div>
+            <div class="imagens">
+                <img src="imgs/imi3.jpg">
+            </div>
+        </div>
+        <div class="clear"><hr></div>
+    </div>
+    <p> Inline, inblock e inlineblock</p>
+    <p>aqui esta o elemento inblock, pode ver que mesmo que o conteudo não 
+        vá até o final da página, o h1 pula para a próxima linha</p>
+    <h1 class="borda">teste1</h1>
+    <h1 class="borda">teste1</h1>
+    <p>aqui foi colocado no css o display:inline</p>
+    <h1 class="bordaIn">teste1</h1>
+    <h1 class="bordaIn">teste1</h1>
+    <p> caso você coloque o inline-block voce ira ter o conteudo respeitando
+         o tamanho dos objetos e não somente o tamanho do conteudo.</p>
+    <p>inline normal</p>
+    <ul>
+        <li class="inx">primeiro</li>
+        <li class="inx">segundo</li>
+    </ul>
+    <p>inline-block</p>
+    <ul>
+        <li class="inxbloc">primeiro</li>
+        <li class="inxbloc">segundo</li>
+    </ul>
+    <p>resumindo, o de linha vai direto para o espaço proximo ao fim, 
+        o block ira criar um bloco até o final da pagina, o inline, 
+        ira criar um bloco que respeite o tamanho do conteudo </p>
+
+        <hr>
+    <h1>posicionamento</h1>
+    <p>posicionamento é e uma caracteristica do css que possui alguns valores que podem ser alterados</p>
+    <p> static é o posicionamento padrão dos objetos html, porem ao colocar as carateristicas,
+         top, right, bottom ou left, e sua quantidade em px, o objeto ira se posicionar em relação a esses valores</p>
+
+    <p>relative é outra forma de posicionamento, parecido com a anterior porem se colocar as caracteristicas top, right... 
+        ele ira se posicionar levando em conta sua posição atual, assim fazendo uma mudança relativa ao ponto original</p>
+
+        <h1 class="rel">teste relative</h1>
+        <p> neste teste ^  o valor do poscionamento está levando em consideração sua posição atual com 10px
+            de top e left
+        </p>
+        <h3>absolute</h3>
+        <p>a posição absolute ira fazer com que o objeto não ocupe espaço na pagina, ou seja ele vai meio que ficar uma camada assima
+            tambem é possivel mover ele com as características de posicionamento.
+            <br>
+            se não colocar um valor de top, right... ele ira ficar onde ele foi instanciado, porem os valores colocados a baixo
+            não respeitarão seu espaço.
+        </p>
+        <h2 class="abs">teste absolute</h2>
+        <p>alo alo alo alo alo alo</p>
+        <p>alo alo alo alo alo alo</p>
+        <p>alo alo alo alo alo alo</p>
+        
+        <h3>fixed</h3>
+        <h1 class="fix">Teste Fixed</h1>
+        <p> o fixed é parecido com o absoluta , ja que ele tambem vai para uma camada superior
+            ,porem ele não muda sua posição com a barra de rolagem
+        </p>
+
+        <div class="cont1">
+            conteudo1
+        </div>
+        <div class="cont2">
+            conteudo2
+        </div>
+        <p> aaaaaaaaaaaaaaaaaaaaaaaaaaaa                   aqui é ultilizado o z index que muda o que está a frente do que</p>
+
+    </body>
+</html>

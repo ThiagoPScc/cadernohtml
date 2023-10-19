@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pag1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #cabecalho{
+            height: 90px;
+            width: 100%;
+            background-color: black;
+        }
+        /* aqui está todos os tipos de estilização de borda no css*/
+        #bordas{
+            border-color: white rgb(199, 199, 199) rgb(121, 121, 121) rgb(49, 49, 49);
+            border-style: solid;
+            border-width: 5px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        
+        #borda1{
+            height: 50px;
+            width: 80%;
+            border: solid rgb(255, 255, 255) 5px;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #borda2{
+            height: 50px;
+            width: 80%;
+            border: groove rgb(255, 255, 255) 5px;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #borda3{
+            height: 50px;
+            width: 80%;
+            border: dotted rgb(255, 255, 255) 5px;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #borda4{
+            height: 50px;
+            width: 80%;
+            border: double rgb(255, 255, 255) 5px;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #borda5{
+            height: 50px;
+            width: 80%;
+            border: ridge rgb(255, 255, 255) 5px;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #borda6{
+            height: 50px;
+            width: 80%;
+            border: inset rgb(255, 255, 255) 5px;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #borda7{
+            height: 50px;
+            width: 80%;
+            border: outset rgb(255, 255, 255) 5px;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #borda8{
+            height: 50px;
+            width: 80%;
+            border: dashed rgb(255, 255, 255) 5px;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        body{
+            background-color: rgb(27, 27, 27);
+        }
+        .textos1{
+            font-size: 30px;
+            color: white;
+        }
+        .texto1{
+            font-size: 1em;
+        }
+        .texto2{
+            font-size: 2em;
+        }
+        .texto3{
+            /* o font weight pode ser normal, bold ou um valor entre 100 e 900*/
+            font-weight: bolder;
+        }
+        .texto4{
+            /* estilo do texto*/
+            font-style: italic;
+            
+        }
+        .texto5{
+
+            font-style:oblique;
+        }
+        .texto6{
+            /* decoração do texto, underline, overline, line trought e etc*/
+            text-decoration: dotted;
+        }
+        .fundo1{
+        
+            background-color: blueviolet;
+            font-size: 40px;
+            color: white;
+        }
+        .fundo2{
+         
+            background-image: url(imgs/im3.jpg);
+            background-repeat: repeat-x;
+            background-size: 50px 50px;
+            font-size: 40px;
+            color: white;
+        }
+        .fundo3{
+            /* o bacground attachment é o que prende a imagem de fundo, ou seja, caso eu dessa na pagina ele ainda vai estar la, nesse caso ficou meio dificil de ver*/
+           /* o position mede a posição do fundo, pode ter dois valores (x e y) onde x mede da direita a esquerda, e o segundo de cima para baixo*/
+         
+            background: blueviolet url(imgs/im3.jpg);
+            background-size: 30px 30px;
+            background-repeat: repeat-x;
+            font-size: 40px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="cabecalho">
+        <a href="index.html"><img height="90" src="imgs/logo.PNG"></a>
+    </div>
+    <h1 style="color:white; margin-left: 48%;">Bordas</h1>
+    <div id="bordas">
+        <div id="borda1"></div>
+        <div id="borda2"></div>
+        <div id="borda3"></div>
+        <div id="borda4"></div>
+        <div id="borda5"></div>
+        <div id="borda6"></div>
+        <div id="borda7"></div>
+        <div id="borda8"></div>
+    </div> 
+    <div class="textos1">
+        <h1 style="color:white; margin-left: 46%;">texto</h1>
+        <p>os tamanho dos textos é definido pelo font-size, seja com px, % ou em, que nesse caso leva em consideração o tamanho do container que está</p>
+        <hr>
+        <p class="texto1">conteudo1</p>
+        <p class="texto2">conteudo2</p>
+        <p>formatação de aparencia de texto</p>
+        <p class="texto3">conteudo3</p>
+        <p class="texto4">conteudo4</p>
+        <p class="texto5">conteudo5</p>
+        <p class="texto6">conteudo6</p>
+    </div>
+    <h1 style="color:white; margin-left: 40%;">Cores e background</h1>
+    <span class="fundo1">Conteudo1</span>
+    <span class="fundo2">Conteudo2</span>
+    <span class="fundo3">Conteudo3</span>
+
+</body>
+</html>

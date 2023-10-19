@@ -1,0 +1,15 @@
+Diferença entre:
+editores de código fonte: são softwares que 
+permitem a construção e a edição de códigos,
+navegação de conteudo, foco na escrita dos códigos
+
+IDE: ela incorpora os recursos dos editores, porem com  recursos a mais
+, recusos de controle de versão, testes, recursos focados para o site
+resumindo: são melhores os programadores avançados pois abrangem mais conteudo.
+
+Os elementos do html podem ser divididos em:
+inblock: elementos que ocupam uma linha inteira da tela, h1, p, table e etc
+
+inline: elementos que se hpuver espaço ficaram alinhados em linha, links, imagens e span
+
+inlineblock, vai ter a largura do inline mas ira para baixo, assim como o inblock
